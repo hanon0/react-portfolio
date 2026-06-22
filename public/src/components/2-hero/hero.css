@@ -1,0 +1,99 @@
+/* 
+******************
+left section 
+******************
+*/
+section.hero{
+    margin-top: 3rem ; 
+}
+
+section.hero .left-section{
+    flex-grow: 1;
+    padding:10px;
+
+}
+
+section.hero .avatar{
+    width: 80px;
+    border-radius: 65%;
+    border: 1.3px solid rgb(177, 111, 29);
+    /* padding: 1.5px; */
+    margin-right: 1px;
+}
+.icon-verified{
+    color: var(--blue-color);
+    font-size: 1.1rem;
+    
+}
+
+/* 
+******************
+personal write 
+******************
+*/
+
+section .icon-x , section .icon-linkedin , section .icon-facebook2 , section .icon-github {
+color: var(--title-color);
+}
+section.hero h1.title1{
+    font-size: 2.85rem;
+    line-height: 3rem;
+    margin: 24px 0;
+    color: var(--title-color); 
+}
+section.hero p.sub-title{
+    color: var(--sub-title) ;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-bottom: 32px;
+}
+section.hero .parent-icon{
+    gap: 1rem;
+    font-size: 1.2rem;
+    color: var(--sub-title);
+
+}
+section.hero  div.parent-icon :hover{
+    color: var(--blue-color);
+}
+
+section.hero .btn {
+    border: none;
+    color: var(--title-color);
+    padding: .8rem .6rem;
+    gap: .5rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    /* cursor: pointer; */
+    font-size: 15px;
+    margin-top: 2rem;
+    border-radius: 30px;
+    border: 1px solid var(--blue-color);
+    width: 150px;
+}
+
+.light section.hero .btn{
+border: 1.5px solid rgb(202,202,202,.518);
+box-shadow: 1px 1px 10px rgb(35, 35, 36,.165);
+}
+
+/* Darker background on mouse-over */
+/* .btn:hover {
+    background-color: RoyalBlue;
+    
+    
+} */
+/* 
+******************
+right section 
+******************
+*/
+/* section.hero .right-section{
+    width: 500px;
+    height: 500px;
+} */
+
+
+
+

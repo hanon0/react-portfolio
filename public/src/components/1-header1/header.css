@@ -1,0 +1,228 @@
+/* table of content */
+/* 
+1-header design
+2-icons buttons
+3-model design
+4-media query (responsive design)
+*/
+
+
+/* 
+*****************
+1-header design
+*****************
+*/
+header.flex{
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top:1.2rem;
+}
+
+header.flex nav{
+    background-color: var(--bg-header);
+    padding:.77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 40px rgb(14, 13, 13 ,.3 );
+
+}
+header ul.flex{
+    gap: 16px;
+    
+}
+header ul.flex li a{
+    color: var(--title-color);
+    opacity: 0.9;
+    font-size: .88rem;
+    font-weight: 500;
+    position: relative;
+
+}
+header ul.flex li a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--blue-color);
+    height: 3px;
+    width:0;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s ease;
+}
+header ul.flex li a:hover{
+    color:var(--blue-color);
+}
+header ul.flex li a:hover::after{
+    width: 100%;
+}
+header button{
+    height: 40px;
+    font-size: 1.2rem;
+
+}
+
+/* 
+*****************
+3-model design
+*****************
+*/
+
+header .fixed{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background-color: rgba(40, 40, 48, 0.9); 
+    /* filter: blur(1px); */
+    backdrop-filter: blur(2.4px);
+}
+
+
+
+header .fixed ul.model{
+    width:85% ;
+    margin: 2rem auto;
+    border-radius: 14px;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    animation: my_model .77s ease 1;
+}
+
+@keyframes my_model{
+    0%{
+        transform: scale(0);
+    }
+    60%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+header .fixed ul.model li{
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: .77rem;
+    padding-top: .5rem;
+    position: relative;
+}
+header .fixed ul.model a{
+    color: var(--title-color) ;
+}
+
+
+header .fixed ul.model li:last-child{
+    border-bottom: none;
+}
+header .fixed ul.model li:first-child{
+    border-bottom: none;
+    margin-top: -1.3rem;
+}
+header .first-child{
+    margin-top: -1.5rem;
+}
+header .fixed ul.model li a{
+    font-size: 1rem;
+}
+header .fixed ul.model li a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--blue-color);
+    height: 3px;
+    width:0;
+    left: 0;
+    bottom: -1px;
+    transition: width 0.4s ease;
+}
+header .fixed ul.model li a:hover{
+    color:var(--blue-color);
+}
+
+header .fixed ul.model li a:hover::after{
+    width: 100%;
+}
+
+/* 
+*****************
+1-icons buttons
+*****************
+*/
+
+.close-btn{
+    text-align: right;
+    border:none;
+    padding-bottom: 0;
+    padding-top: .2rem;   
+    /* margin-top: -1rem; */
+}
+
+/* iconsss */
+
+header .icon-moon-o ,  header .icon-menu{
+    color: var(--title-color);
+}
+.light header .icon-m , .light  header .icon-menu{
+/* box-shadow: 0px 2px 1px -1px #000 , 0px -2px 1px -1px #000; */
+box-shadow: 1px 1px 10px rgb(35, 35, 36,.165);
+}
+header .icon-m , header .icon-menu   {
+    background-color: var(--bg-header);
+    height:  2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.137);
+}
+.light header .icon-m {
+    color: rgb(236, 162, 25);
+    height:  2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.137);
+}
+
+header .icon-m:hover , header .icon-menu:hover{
+    color: white;
+    border: 1px solid rgba(237, 232, 232, 0.384);
+    transition: all 0.3s ease;
+}
+.light header .icon-m:hover{
+    color: rgb(236, 162, 25) ;
+}
+    header .icon-close1{
+        font-size: 1.3rem;
+        color: var(--sub-title);
+        transition: all 0.3s ease;
+        
+        
+    }
+    header .icon-close1:hover{
+        font-size: 1.5rem;
+        color: crimson;
+        transition: all 0.3s ease;
+        rotate: 180deg;
+    }
+    
+
+
+/* 
+*****************
+media query (responsive design)
+*****************
+*/
+
+@media (max-width: 650px) {
+    header.flex nav{
+        display: none;
+    }
+}
+@media (min-width: 650px) {
+    header.flex button.icon-menu{
+        display: none;
+    }
+}
+

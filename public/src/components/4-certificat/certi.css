@@ -1,0 +1,192 @@
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+section.certificat .text{
+    text-align: center;
+    color: var(--blue-color);
+    margin-bottom: 3.5rem;
+    font-size: 2rem;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    /* font-family: Anton; */
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+section.certificat .text span:nth-child(2) {
+    animation-delay: .05s;
+}
+section.certificat .text span:nth-child(3) {
+    animation-delay: .1s;
+}
+section.certificat .text span:nth-child(4) {
+    animation-delay: .15s;
+}
+section.certificat .text span:nth-child(5) {
+    animation-delay: .2s;
+}
+section.certificat .text span:nth-child(6) {
+    animation-delay: .25s;
+}
+section.certificat .text span:nth-child(7) {
+    animation-delay: .3s;
+}
+section.certificat .text span:nth-child(8) {
+    animation-delay: .35s;
+}
+section.certificat .text span:nth-child(9) {
+    animation-delay: .4s;
+}
+section.certificat .text span:nth-child(10) {
+    animation-delay: .45s;
+}
+section.certificat .text span:nth-child(11) {
+    animation-delay: .5s;
+}
+section.certificat .text span:nth-child(12) {
+    animation-delay: .55s;
+}
+section.certificat .text span{
+    opacity: 0;
+    animation: animate 1.5s forwards infinite;
+    transform: translate(-300px , 0) scale(0);
+
+}
+@keyframes animate{
+    60%{
+        transform: translate(-20px , 0) scale(1); 
+        color: rgba(17, 17, 201, 0.763);
+    }
+    80%{
+        transform: translate(-20px , 0) scale(1); 
+        color: var(--blue-color);
+    }
+    99%{
+        transform:translate(0), scale(1,2);
+        color: rgba(17, 17, 201, 0.763);
+    }
+    100%{
+        transform:  translate(0px) ,scale(1); 
+        opacity: 1;
+        color: var(--blue-color);
+    }
+
+
+}
+
+/* 
+***********
+cardes
+***********
+ */
+
+
+section.certificat .parent {
+    position: relative;
+    margin-inline: 0;
+    overflow-x: auto;
+
+
+}
+section.certificat .parent::-webkit-scrollbar{
+    display: none; 
+
+}
+section.certificat div.card img{
+    padding: 0rem ;
+}
+section.certificat div.card{
+    position: relative;
+    height: 315px;
+    width: 260px;
+    background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255,255,255,.05)
+);
+padding: .4rem ;
+border-radius: .8rem ;
+margin-inline: .5rem;
+/* overflow: hidden; */
+}
+
+.light section.certificat div.card{
+border: none;
+box-shadow: -1px 1px 1px  #0000003e , 1px 1px 1px  #0000003e;
+background-image: linear-gradient(
+    rgba(255, 255, 255, 0.164),
+    rgba(255, 255, 255, 0.171)
+);
+
+}
+
+section.certificat div.group1{
+align-items: center;
+animation: spin 40s infinite linear;
+}
+
+section.certificat div.card img{
+    width: 100%;
+    height: 170px;
+    border-radius: .5rem ;
+    
+
+}
+@keyframes spin{
+    from {translate: 0;}
+
+    to{translate: -100%;}
+}
+section.certificat div.card .title-1 {
+    font-size: 25px;
+    padding-top: .5rem;
+    color: var(--title-color);
+}
+section.certificat div.card .sub-title{
+    color: var(--sub-title);
+    font-size: .8rem;
+    margin-bottom: 1.1rem;
+}
+
+section.certificat div.card div.icons{
+justify-content: space-between;
+padding-left: 9px;
+padding-bottom: 1.5rem;
+
+}
+
+
+section.certificat div.card  div.icons .icon1{
+    gap: 11px;
+}
+section .card .icon-link , .card .icon-linkedin{
+    color: var(--sub-title);
+    font-size: 1.2rem;
+}
+
+section .card .icon-link:hover , .card .icon-linkedin:hover {
+    color: var(--blue-color);
+    font-size: 1.22rem;
+
+}
+section .link{
+    gap: 5px; 
+    padding: 0 27px;
+    font-size: 1rem;
+    color: var(--title-color);
+
+}
+section .link:hover{
+    color: var(--blue-color);
+}
+
